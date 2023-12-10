@@ -1,6 +1,7 @@
 @import url(./vendor/normalize.css);
+@import url(./vendor/fonts/inter.css);
 
-.header{
+.header {
   height: 50px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -9,28 +10,217 @@
   margin: 0 auto 86px;
 }
 
-.header__logo{
+.header__logo {
   margin: auto 0;
   margin-left: 190px;
   width: 62px;
   height: 30px;
 }
 
-.header__nav{
+.header__nav {
   margin-right: 190px;
   display: flex;
   flex-direction: row;
 }
 
-.header__link{
+.header__link {
   margin-left: 10px;
 }
 
-.search{
-  border: 1px solid black;
+.search {
+  width: calc(100% - 486px);
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto 0;
 }
 
-.search__inp{
-  width: 863px;
+.search__stack {
+  width: calc(100% - 20px);
+  margin-right: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--gray, #B4B4B4);
+  display: inline-flex;
+}
+
+.search__inp {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.search__btn {
+  border-radius: 4px;
+  border: none;
+  color: aliceblue;
+  background: #285CE3;
+  width: 76px;
+  height: 44px;
+  transition: opacity 0.3s linear;
+}
+
+.search__btn:hover{
+    opacity: 0.6;
+}
+
+.search__image {
+  margin-right: 14px;
+  margin-left: 10px;
+  order: -1;
+  width: 24px;
+}
+
+.cards {
+  max-width: 1060px;
+  margin: 40px auto 0;
+}
+
+.card {
+  padding: 20px 0 20px 0;
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+
+.card__text {}
+
+.card__name {
+  padding: 0;
+  margin: 0 0 8px 0;
+  color: var(--primary, #285CE3);
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card__community {
+  padding: 0;
+  margin: 0 0 8px 0;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card__author {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card__imgs {
+  display: flex;
+}
+
+.card__logo {
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  margin: 0;
+}
+
+.card__like {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+  align-self: start;
+  transition: opacity 0.3s linear;
+}
+
+.card__like:hover{
+    opacity: 0.6;
+}
+
+.card__content {
+  margin: 14px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card__theme {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__theme-logo {
+  width: 292px;
+  height: 111px;
+}
+
+.card__join {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  margin-top: 20px;
+  width: 292px;
+  height: 37px;
+  border-radius: 4px;
+  background: var(--primary, #285CE3);
+  border: none;
+  transition: opacity 0.3s linear;
+}
+
+.card__join:hover{
+    opacity: 0.6;
+}
+
+.card__description {
+  max-width: 695;
+  margin-left: 33px;
+}
+
+.card__describe {
+  padding: 0;
+  margin: 0;
+}
+
+.card__profs {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__prof-descrb {
+  display: flex;
+  margin-right: 26px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: var(--primary20, rgba(40, 92, 227, 0.20));
+}
+
+.card__prof-descrb_req{
+  background: var(--error20, rgba(250, 55, 219, 0.20));
+}
+
+.card__profCheck{
+  margin-left: 6px;
+}
+
+.card__prof-name {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 6px 6px 6px 6px;
 }
