@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto 86px;
+  margin: 0 auto 0;
 }
 
 .header__logo {
@@ -24,14 +24,16 @@
 }
 
 .header__link {
+  text-decoration: none;
   margin-left: 10px;
+  color: black;
 }
 
 .search {
   width: calc(100% - 486px);
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 0;
+  margin: 86px auto 0;
 }
 
 .search__stack {
@@ -58,8 +60,8 @@
   transition: opacity 0.3s linear;
 }
 
-.search__btn:hover{
-    opacity: 0.6;
+.search__btn:hover {
+  opacity: 0.6;
 }
 
 .search__image {
@@ -122,6 +124,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--primary, #285CE3);
 }
 
 .card__imgs {
@@ -138,13 +141,12 @@
 .card__like {
   width: 36px;
   height: 36px;
-  margin-right: 20px;
   align-self: start;
   transition: opacity 0.3s linear;
 }
 
-.card__like:hover{
-    opacity: 0.6;
+.card__like:hover {
+  opacity: 0.6;
 }
 
 .card__content {
@@ -179,8 +181,8 @@
   transition: opacity 0.3s linear;
 }
 
-.card__join:hover{
-    opacity: 0.6;
+.card__join:hover {
+  opacity: 0.6;
 }
 
 .card__description {
@@ -207,11 +209,11 @@
   background: var(--primary20, rgba(40, 92, 227, 0.20));
 }
 
-.card__prof-descrb_req{
+.card__prof-descrb_req {
   background: var(--error20, rgba(250, 55, 219, 0.20));
 }
 
-.card__profCheck{
+.card__profCheck {
   margin-left: 6px;
 }
 
@@ -223,4 +225,51 @@
   line-height: normal;
   padding: 0;
   margin: 6px 6px 6px 6px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060px;
+  margin: 36px auto 0;
+}
+
+.projects__links {
+  display: flex;
+}
+
+.projects_link-proj {
+  text-decoration: none;
+  padding: 0;
+  margin-right: 25px;
+  color: var(--black, #000);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.projects_link-req {
+  color: var(--black, #000);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.projects__button {
+  width: 510px;
+  background-color: white;
+  height: 42px;
+  margin: 60px auto 0;
+  outline: 0;
+  border: 1px solid var(--primary, #285CE3);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

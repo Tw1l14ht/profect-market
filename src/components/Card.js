@@ -11,12 +11,10 @@ function Card() {
             <div className="card__head">
                 <div className="card__text">
                     <p className="card__name">Мобильное приложения “Лекция” для поиска лекций</p>
-                    <p className="card__community">Братство КубГУ Мобайл</p>
                     <p className="card__author">Орлов А. В.</p>
                 </div>
                 <div className="card__imgs">
                     <img className="card__like" src={like} alt=""></img>
-                    <img className="card__logo" src={cardLogo} alt=""></img>
                 </div>
             </div>
             <div className="card__content">

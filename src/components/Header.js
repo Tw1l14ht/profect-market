@@ -1,14 +1,15 @@
 import React from "react";
 import headLogo from "../image/logo.svg";
+import { Routes, Route, Link } from 'react-router-dom';
 
-function Header(){
-    return(
+function Header() {
+    return (
         <header className="header">
             <img className="header__logo" src={headLogo} />
             <nav className="header__nav">
-                <p className="header__link">Главная</p>
-                <p className="header__link">Проекты</p>
-                <p className="header__link">Аккаунт</p>
+                <Link to="/" className="header__link">Главная</Link>
+                <Link to="/projects" className="header__link">Проекты</Link>
+                <Link to="/acc" className="header__link">Аккаунт</Link>
             </nav>
         </header>
     );
