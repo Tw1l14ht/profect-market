@@ -19,12 +19,15 @@
 
 .header__nav {
   margin-right: 190px;
+  align-items: center;
   display: flex;
   flex-direction: row;
 }
 
 .header__link {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
   margin-left: 10px;
   color: black;
 }
@@ -267,9 +270,72 @@
   margin: 60px auto 0;
   outline: 0;
   border: 1px solid var(--primary, #285CE3);
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.new-proj {
+  margin-top: 93px;
+}
+
+.new-proj__head {
+  font-family: 'Inter';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 325px;
+  margin: 0 auto 0;
+}
+
+.new-proj__content {
+  margin-top: 30px;
+  margin-left: 180px;
+}
+
+.new-proj__title {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 20px;
+}
+
+.new-proj__title-input {
+  border-radius: 6px;
+  border: 1px solid #000;
+  width: 295px;
+  padding: 10px;
+  margin-bottom: 22px;
+}
+
+.upload__photo {
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  background: var(--gray, #B4B4B4);
+  max-width: 235px;
+}
+
+.new-proj__photo-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.upload__photo-title {
+  margin: 8px 0 8px 5px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.upload__photo-logo{
+  margin-left: 4px;
 }

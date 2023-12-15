@@ -4,6 +4,7 @@ import Cards from "./Cards";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import React from 'react';
 import NewProject from "./NewProject";
+import CreateProject from "./CreateProject";
 
 function App() {
   return (
@@ -23,6 +24,13 @@ function App() {
             <Cards />
           </>
         } />
+
+<Route path="/projects/newProject" element={
+          <>
+          <CreateProject/>
+          </>
+         }
+         />
 
       </Routes>
     </div>
