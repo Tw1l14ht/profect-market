@@ -195,7 +195,7 @@
 
 .card__describe {
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .card__profs {
@@ -319,6 +319,7 @@
   border-radius: 10px;
   background: var(--gray, #B4B4B4);
   max-width: 235px;
+  margin-bottom: 32px;
 }
 
 .new-proj__photo-input {
@@ -336,6 +337,35 @@
   line-height: normal;
 }
 
-.upload__photo-logo{
+.upload__photo-logo {
   margin-left: 4px;
+}
+
+.new-proj__about-input {
+  width: 579px;
+  height: 120px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.new-proj__title-check{
+ margin-bottom: 14px;
+}
+
+.card__profs{
+  display: flex;
+  margin: 0 0 24px 0;
+}
+
+.card__deleteImg{
+    margin-right: 7px;
+}
+
+.card__prof-descrb_newProj{
+  margin: auto 0;
+}
+
+.card__plusProfs{
+  margin-left: 22px;
 }

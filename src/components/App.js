@@ -2,11 +2,18 @@ import Header from "./Header";
 import Search from "./Search";
 import Cards from "./Cards";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+import { useState } from "react";
 import React from 'react';
 import NewProject from "./NewProject";
 import CreateProject from "./CreateProject";
 
 function App() {
+  const [newProject, setNewProject] = useState(false);
+
+  const handleCreateProjClick = () => {
+    setNewProject = true;
+  }
+
   return (
     <div className="page">
       <Header />
@@ -20,7 +27,7 @@ function App() {
 
         <Route path="/projects" element={
           <>
-            <NewProject />
+            <NewProject onClickNewProf={handleCreateProjClick} />
             <Cards />
           </>
         } />
