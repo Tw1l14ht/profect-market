@@ -6,6 +6,7 @@ import { useState } from "react";
 import React from 'react';
 import NewProject from "./NewProject";
 import CreateProject from "./CreateProject";
+import OpenCard from "./OpenCard";
 
 function App() {
   const [newProject, setNewProject] = useState(false);
@@ -32,12 +33,18 @@ function App() {
           </>
         } />
 
-<Route path="/projects/newProject" element={
+        <Route path="/projects/newProject" element={
           <>
-          <CreateProject/>
+            <CreateProject />
           </>
-         }
-         />
+        }
+        />
+        <Route path="/card" element={
+          <>
+            <OpenCard />
+          </>
+        }
+        />
 
       </Routes>
     </div>
