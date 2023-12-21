@@ -259,6 +259,17 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  margin-right: 25px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.projects_link-like{
+  color: var(--black, #000);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
   text-decoration: none;
 }
@@ -294,6 +305,7 @@
 .new-proj__content {
   margin-top: 30px;
   margin-left: 180px;
+  border: none;
 }
 
 .new-proj__title {
@@ -368,4 +380,16 @@
 
 .card__plusProfs{
   margin-left: 22px;
+}
+
+.new__proj-btn{
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 300px;
+  height: 38px;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
