@@ -144,8 +144,16 @@
 .card__like {
   width: 36px;
   height: 36px;
+  background-image: url(./image/like.svg);
+  background-size: contain;
   align-self: start;
   transition: opacity 0.3s linear;
+  border: none;
+  background-color: transparent;
+}
+
+.card__like_active {
+  background-image: url(./image/like_active.svg);
 }
 
 .card__like:hover {
@@ -264,7 +272,7 @@
   text-decoration: none;
 }
 
-.projects_link-like{
+.projects_link-like {
   color: var(--black, #000);
   font-family: 'Inter';
   font-size: 16px;
@@ -361,28 +369,28 @@
   margin-bottom: 20px;
 }
 
-.new-proj__title-check{
- margin-bottom: 14px;
+.new-proj__title-check {
+  margin-bottom: 14px;
 }
 
-.card__profs{
+.card__profs {
   display: flex;
   margin: 0 0 24px 0;
 }
 
-.card__deleteImg{
-    margin-right: 7px;
+.card__deleteImg {
+  margin-right: 7px;
 }
 
-.card__prof-descrb_newProj{
+.card__prof-descrb_newProj {
   margin: auto 0;
 }
 
-.card__plusProfs{
+.card__plusProfs {
   margin-left: 22px;
 }
 
-.new__proj-btn{
+.new__proj-btn {
   border: 1px solid grey;
   border-radius: 5px;
   width: 300px;
@@ -392,4 +400,95 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.card__open-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.opencard {
+  max-width: 1060px;
+  margin: 40px auto 0;
+}
+
+.opencard__name {
+  font-size: 26px;
+  margin-bottom: 13px;
+}
+
+.opencard__theme {
+  width: 520px;
+  height: 210px;
+  margin-right: 22px;
+}
+
+.opencard__info {
+  display: flex;
+  flex-direction: row;
+}
+
+.opencard__author-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.opencard__author {
+  align-self: center;
+  display: flex;
+}
+
+.opencard__join {
+  width: 400px;
+}
+
+.opencard__author-text {
+  margin-left: 5px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.opencard__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.opencard__describe {
+  margin-top: 40px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.opencard__describe-text {
+  margin-top: 15px;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.opencard__members{
+  display: flex;
+}
+
+.opencard__members-title{
+  margin-top: 22px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.opencard__member{
+  margin-right: 10px;
 }

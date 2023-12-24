@@ -25,7 +25,7 @@ function CreateProject() {
                         <p className="upload__photo-title">Загрузить изображение</p>
                         <img className="upload__photo-logo" src={uploadLogo} />
                     </label>
-                    <input id="photoInput" type="file" className="new-proj__photo-input" placeholder="" />
+                    <input id="photoInput" type="file" accept="image/*" className="new-proj__photo-input" placeholder="" />
                     <h2 className="new-proj__title new-proj__title-about">О проекте</h2>
                     <textarea className="new-proj__about-input" placeholder="Введите описание"></textarea>
                     <h2 className="new-proj__title  ">Занятые роли</h2>

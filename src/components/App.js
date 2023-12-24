@@ -7,6 +7,8 @@ import React from 'react';
 import NewProject from "./NewProject";
 import CreateProject from "./CreateProject";
 import OpenCard from "./OpenCard";
+import { CurrentCardsContext } from "../context/ArrayOfCards";
+import { initialCards } from "../utils/constants";
 
 function App() {
   const [newProject, setNewProject] = useState(false);
@@ -15,39 +17,42 @@ function App() {
     setNewProject = true;
   }
 
+  const handleLikeClick = () => {
+    setNewProject = true;
+  }
+
   return (
-    <div className="page">
-      <Header />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Search />
-            <Cards />
-          </>
-        } />
+    <CurrentCardsContext.Provider value={initialCards}>
+      <div className="page">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Search />
+              <Cards />
+            </>
+          } />
 
-        <Route path="/projects" element={
-          <>
-            <NewProject onClickNewProf={handleCreateProjClick} />
-            <Cards />
-          </>
-        } />
+          <Route exact path="/:_id" element={<OpenCard cards={initialCards} />}
+          />
 
-        <Route path="/projects/newProject" element={
-          <>
-            <CreateProject />
-          </>
-        }
-        />
-        <Route path="/card" element={
-          <>
-            <OpenCard />
-          </>
-        }
-        />
+          <Route path="/projects" element={
+            <>
+              <NewProject onClickNewProf={handleCreateProjClick} />
+              <Cards />
+            </>
+          } />
 
-      </Routes>
-    </div>
+          <Route path="/projects/newProject" element={
+            <>
+              <CreateProject />
+            </>
+          }
+          />
+
+        </Routes>
+      </div>
+    </CurrentCardsContext.Provider>
   );
 }
 
